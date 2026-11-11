@@ -29,7 +29,7 @@
   <Target Name="SetVersionProperties" BeforeTargets="Build" DependsOnTargets="GetBuildVersion">
     <!-- For properties which depend on those set by NBGV -->
     <PropertyGroup>
-      <PackageReleaseNotes>https://github.com/sshnet/SSH.NET/releases/tag/$(Version)</PackageReleaseNotes>
+      <PackageReleaseNotes>https://github.com/sufficit/SSH.NET/blob/release/sufficit-net7/docs/SUFFICIT-COMPATIBILITY.md</PackageReleaseNotes>
     </PropertyGroup>
   </Target>
     
