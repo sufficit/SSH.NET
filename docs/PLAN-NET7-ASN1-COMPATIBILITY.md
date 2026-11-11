@@ -4,7 +4,7 @@ Objetivo: preservar as correções SSH.NET 2026 e tornar o asset netstandard2.0 
 
 1. [concluído] Reproduzir o aviso com consumo real net7 e identificar o menor ajuste de dependência compatível.
 2. [concluído] Implementar o ajuste e validação de consumo, executar testes criptográficos/SCP e builds pertinentes; verificar audit.
-3. [em andamento] Registrar evidências e limites, enviar branch ao fork Sufficit e abrir PR no fork Sufficit com divulgação de uso de IA e material para submissão humana ao upstream.
+3. [concluído] Registrar evidências e limites, enviar branch ao fork Sufficit e abrir PR no fork Sufficit com divulgação de uso de IA e material para submissão humana ao upstream.
 
 Usar uma alteração pequena sobre develop (linha 2026.0.1), conferir também a release 2026.0.0. Não fazer downgrade de SSH.NET, remover correções SCP ou suprimir avisos. Não substituir o pacote do Standard antes de existir uma revisão validada e identificável.
 
@@ -15,3 +15,5 @@ CONTRIBUTING do upstream remete à política Polars: interação por agentes é 
 Problema adicional reproduzido: ListDirectoryAsync do asset netstandard2.0 expõe IAsyncEnumerable de Microsoft.Bcl.AsyncInterfaces, mas Logging 8 seleciona seu asset moderno no consumidor e elimina a dependência transitiva. Consumidor net7 falha CS0012. Declarada referência pública direta no grupo netstandard2.0. Testes da biblioteca .NET Standard em host net10 exigem também desambiguar Lock no helper de sockets; não altera o runtime da biblioteca.
 
 Validação final: pack Release dos cinco assets; 2388 unitários nativos +2388 contra netstandard2.0 aprovados (45 skips previstos por suíte). Consumidor empacotado net7: build -warnaserror sem avisos, seis cargas PKCS8 com assinatura/verificação/tamper e enumeração async desconectada aprovadas; audit transitivo sem vulneráveis. Release 2026.0.0 com o mesmo ajuste também compilou netstandard2.0 e passou os seis casos PKCS8 em runtime7 isolado. Não foram executados testes Docker/servidor SSH externo.
+
+Entrega: branch fix/netstandard-asn1-net7 enviada ao fork e PR https://github.com/sufficit/SSH.NET/pull/1 aberto. Fonte 7849a10c; pacote local 2026.0.1-prerelease.21.g7849a10c93. CI remoto consultado separadamente; seus resultados não são inferidos dos testes locais. Nenhuma publicação NuGet, merge ou substituição do pacote no Standard foi realizada.

@@ -11,3 +11,5 @@ The initial filtered Git clone lacked historical blobs required by Nerdbank.GitV
 Upstream CONTRIBUTING references the Polars AI policy, including human submission/review. The authorized PR is opened within Sufficit's fork, with AI disclosure and without claiming human review. Implementation and records prepared by OpenAI Codex at the maintainer's request.
 
 [Compatibility notes](../NET7-COMPATIBILITY.md), [plan](../PLAN-NET7-ASN1-COMPATIBILITY.md).
+
+Delivery: https://github.com/sufficit/SSH.NET/pull/1 (open), branch fix/netstandard-asn1-net7, commit 7849a10c93. This is a reviewable PR in the Sufficit fork, not an upstream submission, merge, public NuGet release or Standard rollout.
