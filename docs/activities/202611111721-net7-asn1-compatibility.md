@@ -13,3 +13,7 @@ Upstream CONTRIBUTING references the Polars AI policy, including human submissio
 [Compatibility notes](../NET7-COMPATIBILITY.md), [plan](../PLAN-NET7-ASN1-COMPATIBILITY.md).
 
 Delivery: https://github.com/sufficit/SSH.NET/pull/1 (open), branch fix/netstandard-asn1-net7, commit 7849a10c93. This is a reviewable PR in the Sufficit fork, not an upstream submission, merge, public NuGet release or Standard rollout.
+
+## Upstream submission explicitly requested
+
+The maintainer clarified that he wanted submission through his own GitHub account. Opened https://github.com/sshnet/SSH.NET/pull/1866 as hugodeco. Verified OPEN state, develop base, source 7849a10c939cc1543ab5535a8af0ec0baf503a08 and exactly four technical files. AI disclosure remains explicit and human review is not asserted. No listed upstream checks at initial verification; fork runs 43095593980/43095593961 were still queued. This subsequent authorized submission supersedes the earlier fork-only delivery decision.

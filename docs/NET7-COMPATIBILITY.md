@@ -15,3 +15,5 @@ The default build and test framework selection are unchanged without that proper
 Changes are submitted to the Sufficit fork for review. Upstream CONTRIBUTING references the Polars AI policy, requiring human interaction and review; any upstream submission must follow that policy. The patch and validation were prepared by OpenAI Codex at the maintainer's request.
 
 [Execution plan](PLAN-NET7-ASN1-COMPATIBILITY.md).
+
+The maintainer subsequently explicitly requested submission through his GitHub account. [Upstream PR #1866](https://github.com/sshnet/SSH.NET/pull/1866) was opened by hugodeco against develop, with the same four-file patch and full AI disclosure. No human line-by-line review is asserted. At the initial verification the PR was open and had no listed checks; the fork CI remained queued.

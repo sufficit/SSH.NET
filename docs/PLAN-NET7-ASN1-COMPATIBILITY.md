@@ -17,3 +17,15 @@ Problema adicional reproduzido: ListDirectoryAsync do asset netstandard2.0 expõ
 Validação final: pack Release dos cinco assets; 2388 unitários nativos +2388 contra netstandard2.0 aprovados (45 skips previstos por suíte). Consumidor empacotado net7: build -warnaserror sem avisos, seis cargas PKCS8 com assinatura/verificação/tamper e enumeração async desconectada aprovadas; audit transitivo sem vulneráveis. Release 2026.0.0 com o mesmo ajuste também compilou netstandard2.0 e passou os seis casos PKCS8 em runtime7 isolado. Não foram executados testes Docker/servidor SSH externo.
 
 Entrega: branch fix/netstandard-asn1-net7 enviada ao fork e PR https://github.com/sufficit/SSH.NET/pull/1 aberto. Fonte 7849a10c; pacote local 2026.0.1-prerelease.21.g7849a10c93. CI remoto consultado separadamente; seus resultados não são inferidos dos testes locais. Nenhuma publicação NuGet, merge ou substituição do pacote no Standard foi realizada.
+
+## Envio ao upstream autorizado pelo mantenedor
+
+O mantenedor esclareceu que deseja o envio pela própria conta GitHub (hugodeco). Esta instrução explícita substitui a decisão anterior de limitar o envio ao fork. Manter a divulgação de Codex e não afirmar revisão humana que não ocorreu.
+
+4. [concluído] Conferir branch, validações e ausência de PR upstream duplicado; preparar descrição honesta para revisão.
+5. [concluído] Abrir PR sshnet/SSH.NET:develop com a branch já validada do fork, usando a conta autenticada.
+6. [concluído] Verificar criação/arquivos e registrar URL e estado dos checks.
+
+PR upstream criado: https://github.com/sshnet/SSH.NET/pull/1866.
+
+Verificado: PR 1866 OPEN, autor hugodeco, base develop e head 7849a10c939cc1543ab5535a8af0ec0baf503a08; exatamente os quatro arquivos técnicos esperados. Sem checks apresentados na consulta inicial (CI do fork ainda queued). Divulgação de Codex preservada; nenhuma revisão humana afirmada. O envio efetivo ao upstream supera a restrição de entrega anterior, por instrução explícita do mantenedor.
